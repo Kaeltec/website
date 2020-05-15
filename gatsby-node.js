@@ -1,7 +1,11 @@
+const { resolve } = require('path');
+
 module.exports = {
-  modifyWebpackConfig: ({ config, stage }) => {
-    if (stage === 'build-javascript') {
-      config.merge({ devtool: false });
-    }
+  onCreateWebpackConfig: ({ actions }) => {
+    actions.setWebpackConfig({
+      resolve: {
+        modules: [resolve(__dirname, 'src'), 'node_modules'],
+      },
+    });
   },
 };

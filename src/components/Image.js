@@ -8,7 +8,7 @@ const ImageComponent = ({ source, alt }) => (
   <StaticQuery
     query={graphql`
       query {
-        images: allFile {
+        assets: allFile {
           edges {
             node {
               relativePath
@@ -24,7 +24,7 @@ const ImageComponent = ({ source, alt }) => (
       }
     `}
     render={data => {
-      const image = data.images.edges.find(({ node }) => {
+      const image = data.assets.edges.find(({ node }) => {
         return node.relativePath.includes(source);
       });
 

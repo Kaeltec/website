@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
+        name: 'assets',
         path: resolve(__dirname, 'src', 'assets'),
       },
     },
@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: '',
+        color: '#fff',
       },
     },
     {
