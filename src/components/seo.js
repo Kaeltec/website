@@ -38,10 +38,6 @@ const SEOComponent = ({ title, description, meta }) => {
       meta={[
         // Open Graph
         {
-          property: 'og:type',
-          content: 'website',
-        },
-        {
           name: 'description',
           content: metaDescription,
         },

@@ -29,7 +29,8 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
-
+    'react/no-danger': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/jsx-filename-extension': [

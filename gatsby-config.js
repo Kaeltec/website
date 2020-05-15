@@ -1,16 +1,19 @@
+const { resolve } = require('path');
+
 module.exports = {
   siteMetadata: {
     title: 'Kael | The best discord fun bot',
     description: 'The best discord fun bot.',
+    siteUrl: 'https://kaeltec.fun',
     author: 'Kaeltec Team',
     social: {
       twitter: {
-        username: '',
-        url: '',
+        username: 'BotKael',
+        url: 'https://twitter.com/BotKael',
       },
       github: {
-        username: '',
-        url: '',
+        username: 'Kaeltec',
+        url: 'https://github.com/Kaeltec',
       },
     },
   },
@@ -18,24 +21,70 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-offline',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: resolve(__dirname, 'src', 'assets'),
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://kaeltec.fun',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-166754587-1',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: '',
       },
     },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Kael the best discord fun bot',
+        short_name: 'kaeltec.fun',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png',
+        icon: 'src/assets/images/logo.png',
+        background_color: '#f23859',
+        theme_color: '#f23859',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        output: '/sitemap.xml',
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+          }
+        `,
+        serialize: ({ site, allSitePage }) => {
+          return allSitePage.edges.map(edge => ({
+            url: `${site.siteMetadata.siteUrl}${edge.node.path}`,
+          }));
+        },
       },
     },
   ],
