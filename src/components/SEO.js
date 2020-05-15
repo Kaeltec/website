@@ -83,8 +83,9 @@ SEOComponent.propTypes = {
 };
 
 SEOComponent.defaultProps = {
-  title: '',
-  description: '',
+  title: 'Kael | The best discord fun bot',
+  description:
+    'Kael a Brazilian bot designed for Discord server management. Get access to my commands divided by category by accessing my website.',
   meta: [],
 };
 

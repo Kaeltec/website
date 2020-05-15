@@ -7,7 +7,7 @@ export const Container = styled.header`
 
   z-index: 999;
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 60px;
 
   top: 0;
   left: 0;
@@ -119,7 +119,7 @@ export const Navigation = styled.nav`
     z-index: 5;
     width: 100%;
 
-    top: -200%;
+    top: -100vh;
     opacity: 0;
 
     margin: 0;

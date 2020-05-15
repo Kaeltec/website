@@ -1,0 +1,106 @@
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+
+import api from '../services/api';
+import { getUrlParams } from '../utils';
+
+import Layout from '../components/Layout';
+import Loader from '../components/Loader';
+import SEO from '../components/SEO';
+
+import {
+  Container,
+  Hero,
+  Content,
+  Navigation,
+  Button,
+  CommandsContainer,
+} from '../styles/pages/commands';
+
+const CommandsPage = ({ navigate, location: { search } }) => {
+  const [commands, setCommands] = useState();
+
+  useEffect(() => {
+    async function getCommands() {
+      const { data } = await api.get('client/commands');
+
+      setCommands({
+        get: category =>
+          data.filter(c => c.category.toLowerCase() === category),
+        categories: data
+          .map(c => c.category.toLowerCase())
+          .filter((v, i, a) => a.indexOf(v) === i),
+      });
+    }
+
+    getCommands();
+  }, []);
+
+  const activeCategory = (getUrlParams(search).category || 'bot').toLowerCase();
+
+  if (commands && !commands.categories.some(c => c === activeCategory)) {
+    navigate(`/commands?category=${commands.categories[0]}`);
+  }
+
+  return (
+    <Layout>
+      <SEO title="Kael - Commands | The best discord fun bot" />
+
+      <Container>
+        <h1>COMANDOS</h1>
+        <hr />
+
+        <Hero>
+          <p>
+            <span style={{ color: '#6bf085' }}>Parâmetros opcionais:</span>{' '}
+            <span style={{ marginLeft: '5px' }}>[aparecem assim]</span>
+          </p>
+          <p>
+            <span style={{ color: '#e96969' }}> Parâmetros obrigatórios:</span>{' '}
+            <span style={{ marginLeft: '5px' }}> {'<aparecem assim>'}</span>
+          </p>
+        </Hero>
+
+        {!commands ? (
+          <Loader style={{ marginTop: '40px' }} />
+        ) : (
+          <Content>
+            <Navigation>
+              {commands.categories.map(category => (
+                <Button
+                  key={category}
+                  active={category === activeCategory}
+                  to={`/commands?category=${category}`}
+                >
+                  {category.toUpperCase()}
+                </Button>
+              ))}
+            </Navigation>
+
+            <CommandsContainer>
+              {commands.get(activeCategory).map(command => (
+                <div key={command.name}>
+                  <span>
+                    <strong>{command.name}</strong>
+                    <span>[@menção]</span>
+                  </span>
+
+                  <p>{command.description || 'Descrição não informada'}</p>
+                </div>
+              ))}
+            </CommandsContainer>
+          </Content>
+        )}
+      </Container>
+    </Layout>
+  );
+};
+
+CommandsPage.propTypes = {
+  navigate: PropTypes.func.isRequired,
+  location: PropTypes.shape({
+    search: PropTypes.string,
+  }).isRequired,
+};
+
+export default CommandsPage;
