@@ -16,10 +16,10 @@ const HeaderComponent = () => {
   return (
     <Container>
       <BrandsContainer>
-        <div>
+        <Link to="/">
           <Image source="images/logo.png" alt="Logo" />
           <span>Kael</span>
-        </div>
+        </Link>
 
         <ResponsiveButton
           open={navbarOpen}

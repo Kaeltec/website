@@ -24,7 +24,7 @@ export default createGlobalStyle`
   }
 
   body,
-  &.scrool {
+  &.scroll {
     &::-webkit-scrollbar-thumb {
       background-color: ${props => props.theme.grey};
       border-radius: 6px;

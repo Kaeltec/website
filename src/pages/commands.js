@@ -62,7 +62,7 @@ const CommandsPage = ({ navigate, location: { search } }) => {
         </Hero>
 
         {!commands ? (
-          <Loader style={{ marginTop: '40px' }} />
+          <Loader style={{ marginTop: '40px', textAlign: 'center' }} />
         ) : (
           <Content>
             <Navigation>

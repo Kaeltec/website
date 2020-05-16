@@ -23,7 +23,7 @@ export const BrandsContainer = styled.div`
   padding-right: 20px;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 
-  & > div:first-child {
+  & > a {
     display: flex;
     align-items: center;
 
@@ -49,7 +49,7 @@ export const BrandsContainer = styled.div`
     border: none;
     justify-content: space-between;
 
-    & > div:first-child span {
+    & > a span {
       display: none;
     }
   }

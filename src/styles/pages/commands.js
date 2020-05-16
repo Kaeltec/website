@@ -7,7 +7,6 @@ export const Container = styled.div`
 
   h1 {
     font-size: 4rem;
-    /* text-align: center; */
   }
 
   hr {
@@ -37,6 +36,16 @@ export const Hero = styled.div`
       color: ${props => props.theme.grey};
     }
   }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+
+    p + p {
+      margin: 0;
+      margin-top: 10px;
+    }
+  }
 `;
 
 export const Content = styled.section`
@@ -45,13 +54,23 @@ export const Content = styled.section`
   margin-top: 40px;
   padding: 10px 20px;
   background-color: ${props => props.theme.dark_solid};
+
+  @media (max-width: 1024px) {
+    height: 100%;
+    flex-direction: column;
+  }
 `;
 
-export const Navigation = styled.nav`
+export const Navigation = styled.nav.attrs({ className: 'scroll' })`
   display: flex;
   padding: 20px 40px;
   flex-direction: column;
   border-right: 1px solid rgba(255, 255, 255, 0.25);
+
+  @media (max-width: 1024px) {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
 `;
 
 export const Button = styled(Link)`

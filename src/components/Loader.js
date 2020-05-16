@@ -20,8 +20,8 @@ const spinner = keyframes`
 
 const Container = styled.div`
   img {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     animation: ${spinner} 800ms linear infinite;
   }
 `;
