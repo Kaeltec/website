@@ -9,6 +9,7 @@ module.exports = {
     social: {
       twitter: {
         username: 'BotKael',
+        creator: '@BotKael',
         url: 'https://twitter.com/BotKael',
       },
       github: {

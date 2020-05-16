@@ -15,12 +15,16 @@ const HTML = ({
       <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      <meta name="author" content="Kaeltec Team" />
-
       <meta
         name="keywords"
         content="discord, discord-bot, bot, github, javascript, node, nodejs, kael, kaeltec, kaelbot, kael-bot, kael bot"
       />
+
+      <meta name="author" content="Kaeltec Team" />
+
+      <meta name="MobileOptimized" content="320" />
+      <meta name="HandheldFriendly" content="True" />
+      <meta name="referrer" content="no-referrer-when-downgrade" />
 
       <meta property="og:locale" content="pt_BR" />
       <meta property="og:type" content="website" />
