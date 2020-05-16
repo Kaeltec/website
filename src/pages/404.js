@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const NotFoundPage = ({ navigate }) => {
-  navigate('/');
+  useEffect(() => {
+    navigate('/');
+  }, [navigate]);
 
   return <></>;
 };
