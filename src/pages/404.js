@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
-import SEO from '../components/SEO';
+const NotFoundPage = ({ navigate }) => {
+  navigate('/');
 
-const NotFoundPage = () => (
-  <>
-    <SEO title="Page two" />
+  return <></>;
+};
 
-    <h1>NotFoundPage</h1>
-    <Link to="/">Go back to the homepage</Link>
-  </>
-);
+NotFoundPage.propTypes = {
+  navigate: PropTypes.func.isRequired,
+};
 
 export default NotFoundPage;

@@ -18,28 +18,25 @@ import {
 } from '../styles/pages/commands';
 
 const CommandsPage = ({ navigate, location: { search } }) => {
-  const [commands, setCommands] = useState();
+  const [data, setCommands] = useState({});
 
   useEffect(() => {
     async function getCommands() {
-      const { data } = await api.get('client/commands');
+      const { commands, categories } = await api
+        .get('client/commands')
+        .then(r => r.data);
 
-      setCommands({
-        get: category =>
-          data.filter(c => c.category.toLowerCase() === category),
-        categories: data
-          .map(c => c.category.toLowerCase())
-          .filter((v, i, a) => a.indexOf(v) === i),
-      });
+      setCommands({ commands, categories });
     }
 
     getCommands();
   }, []);
 
+  const { commands, categories } = data;
   const activeCategory = (getUrlParams(search).category || 'bot').toLowerCase();
 
-  if (commands && !commands.categories.some(c => c === activeCategory)) {
-    navigate(`/commands?category=${commands.categories[0]}`);
+  if (commands && !categories.some(c => c === activeCategory)) {
+    navigate(`/commands/?category=${categories[0]}`);
   }
 
   return (
@@ -61,16 +58,16 @@ const CommandsPage = ({ navigate, location: { search } }) => {
           </p>
         </Hero>
 
-        {!commands ? (
+        {!commands || !commands[activeCategory] ? (
           <Loader style={{ marginTop: '40px', textAlign: 'center' }} />
         ) : (
           <Content>
             <Navigation>
-              {commands.categories.map(category => (
+              {categories.map(category => (
                 <Button
                   key={category}
                   active={category === activeCategory}
-                  to={`/commands?category=${category}`}
+                  to={`/commands/?category=${category}`}
                 >
                   {category.toUpperCase()}
                 </Button>
@@ -78,11 +75,11 @@ const CommandsPage = ({ navigate, location: { search } }) => {
             </Navigation>
 
             <CommandsContainer>
-              {commands.get(activeCategory).map(command => (
+              {commands[activeCategory].map(command => (
                 <div key={command.name}>
                   <span>
                     <strong>{command.name}</strong>
-                    <span>[@menção]</span>
+                    <span>{command.usage}</span>
                   </span>
 
                   <p>{command.description || 'Descrição não informada'}</p>

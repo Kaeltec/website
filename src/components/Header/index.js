@@ -32,12 +32,14 @@ const HeaderComponent = () => {
       </BrandsContainer>
 
       <Navigation open={navbarOpen}>
-        <Link to="/commands">Commands</Link>
-        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+        <Link to="/commands">Comandos</Link>
+        <Link to="/support">Suporte</Link>
+        <a
+          href="https://translate.kaeltec.fun/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Me Traduza
-        </a>
-        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-          Support
         </a>
       </Navigation>
     </Container>
