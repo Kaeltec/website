@@ -49,7 +49,7 @@ export const BrandsContainer = styled.div`
     border: none;
     justify-content: space-between;
 
-    & > a span {
+    & > a > span {
       display: none;
     }
   }

@@ -8,6 +8,7 @@ export const Container = styled.div.attrs({
 
   flex-direction: column;
   justify-content: space-between;
+  background-color: ${props => props.theme.dark};
 `;
 
 export const Content = styled.main`

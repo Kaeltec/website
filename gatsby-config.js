@@ -22,7 +22,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-offline',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
@@ -69,6 +68,7 @@ module.exports = {
         theme_color: '#f23859',
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {

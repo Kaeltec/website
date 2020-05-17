@@ -1,4 +1,5 @@
 import React from 'react';
+import urlJoin from 'url-join';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -27,6 +28,7 @@ const SEOComponent = ({ title, description, image, meta }) => {
   );
 
   const metaDescription = description || siteMetadata.description;
+  const metaImage = urlJoin('https://kaeltec.fun', image);
 
   return (
     <Helmet
@@ -39,7 +41,7 @@ const SEOComponent = ({ title, description, image, meta }) => {
         },
         {
           name: 'image',
-          content: image,
+          content: metaImage,
         },
         // Open Graph
         {
@@ -60,11 +62,11 @@ const SEOComponent = ({ title, description, image, meta }) => {
         },
         {
           property: 'og:image',
-          content: image,
+          content: metaImage,
         },
         {
           property: 'og:image:secure_url',
-          content: image,
+          content: metaImage,
         },
         // Twitter
         {
@@ -89,11 +91,11 @@ const SEOComponent = ({ title, description, image, meta }) => {
         },
         {
           name: 'twitter:image',
-          content: image,
+          content: metaImage,
         },
         {
           name: 'twitter:image:src',
-          content: image,
+          content: metaImage,
         },
       ].concat(meta)}
     />

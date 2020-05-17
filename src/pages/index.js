@@ -36,8 +36,11 @@ const HomePage = () => (
       <Content>
         <Image source="images/logo.png" alt="Logo" />
 
-        <h1>Kael um bot brasileiro para Discord.</h1>
-        <h2>Sistema de level por call, moderação e música.</h2>
+        <h1>Kael um bot brasileiro para gestão de servidores Discord.</h1>
+        <h2>
+          Oi, eu sou o Kael! Um porquinho charmoso que alegra seus dias e faz
+          com que membros do seu servidor sintam-se felizes.
+        </h2>
 
         <ButtonsContainer>
           <a

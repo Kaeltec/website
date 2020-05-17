@@ -25,6 +25,8 @@ export const Content = styled.div`
   position: relative;
   display: flex;
   z-index: 3;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0 20px;
 
   text-align: center;
@@ -33,17 +35,17 @@ export const Content = styled.div`
   justify-content: center;
 
   img {
-    width: 25rem !important;
-    height: 25rem !important;
+    width: 20rem !important;
+    height: 20rem !important;
   }
 
   h1 {
-    margin: 10px 0;
-    font-size: 3rem;
+    margin: 15px 0;
+    font-size: 2.8rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: ${props => props.theme.grey};
   }
 `;

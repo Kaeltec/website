@@ -1,18 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
-import platonicaFont from '../assets/fonts/platonica.otf';
-
-import '../assets/css/normalize.css';
-import '../assets/css/styles.css';
-
 export default createGlobalStyle`
-  @font-face {
-    font-family: 'Platonica';
-    src: url(${platonicaFont});
-  }
-
   html {
-    background-color: #313339;
+    background-color: #222429;
   }
 
   body {
@@ -20,7 +10,7 @@ export default createGlobalStyle`
     color: #fff;
 
     transition: font-size 200ms ease-in-out;
-    background-color: ${props => props.theme.dark};
+    background-color: ${props => props.theme.dark_solid};
   }
 
   body,

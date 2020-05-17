@@ -10794,6 +10794,13 @@ react-hot-loader@^4.12.21:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
+react-image-appear@^1.2.23:
+  version "1.2.23"
+  resolved "https://registry.yarnpkg.com/react-image-appear/-/react-image-appear-1.2.23.tgz#4a8d17eda91f84ce3dca1e5a571dabb436b6616f"
+  integrity sha512-MO5IL9CmJTLUhgm7AnUl23z9V4FWowB9k2KNZQbITrNRdPZ8qgPY1aJwCaKvExApwPMe9AInnpby2TsVwx5YXQ==
+  dependencies:
+    prop-types "^15.6.1"
+
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -13086,6 +13093,11 @@ url-join@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/url-join/-/url-join-1.1.0.tgz#741c6c2f4596c4830d6718460920d0c92202dc78"
   integrity sha1-dBxsL0WWxIMNZxhGCSDQySIC3Hg=
+
+url-join@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.1.tgz#b642e21a2646808ffa178c4c5fda39844e12cde7"
+  integrity sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==
 
 url-loader@^1.1.2:
   version "1.1.2"
