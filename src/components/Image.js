@@ -1,16 +1,14 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import Image from 'gatsby-image';
+import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 
 const ImageComponent = ({ source, alt }) => {
-  const refImage = useRef();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const { current: image } = refImage;
-
-    image.addEventListener('load', () => setLoading(false));
+    setLoading(false);
   }, []);
 
   return (
@@ -41,28 +39,30 @@ const ImageComponent = ({ source, alt }) => {
 
         return (
           <Container
-            ref={refImage}
             loaded={!loading}
-            src={image.node.childImageSharp.fluid.src}
+            src={image.node.childImageSharp.fluid}
             alt={alt}
-          />
+          >
+            <Image fluid={image.node.childImageSharp.fluid} alt={alt} />
+          </Container>
         );
       }}
     />
   );
 };
 
-const Container = styled.img`
-  opacity: 0;
-  transform: scale(0.2);
-  transition: opacity 200ms, transform 300ms;
+const Container = styled.div`
+  transform: scale(${props => (props.loaded ? '1' : '0.8')});
+  transition: transform 200ms;
 
-  ${props =>
-    props.loaded &&
-    css`
-      opacity: 1;
-      transform: scale(1);
-    `}
+  div.gatsby-image-wrapper {
+    & > div:first-child {
+      padding: 0 !important;
+    }
+    & > img {
+      position: relative !important;
+    }
+  }
 `;
 
 ImageComponent.propTypes = {
