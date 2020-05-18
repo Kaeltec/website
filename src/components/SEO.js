@@ -15,6 +15,7 @@ const SEOComponent = ({ title, description, image, meta }) => {
             title
             description
             author
+            siteUrl
             social {
               twitter {
                 url
@@ -28,7 +29,7 @@ const SEOComponent = ({ title, description, image, meta }) => {
   );
 
   const metaDescription = description || siteMetadata.description;
-  const metaImage = urlJoin('https://kaeltec.fun', image);
+  const metaImage = urlJoin(siteMetadata.siteUrl, image);
 
   return (
     <Helmet

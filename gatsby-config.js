@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: 'Kael | The best discord fun bot',
     description: 'The best discord fun bot.',
-    siteUrl: 'https://kaeltec.fun',
     author: 'Kaeltec Team',
+    siteUrl: 'https://beta.kaeltec.fun',
     social: {
       twitter: {
         username: 'BotKael',
