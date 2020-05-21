@@ -68,6 +68,7 @@ export const Navigation = styled.nav.attrs({ className: 'scroll' })`
   border-right: 1px solid rgba(255, 255, 255, 0.25);
 
   @media (max-width: 1024px) {
+    padding: 20px 20px;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
@@ -130,6 +131,8 @@ export const CommandsContainer = styled.section`
     }
 
     span {
+      display: flex;
+
       strong {
         text-transform: uppercase;
         font-size: 2.6rem;
@@ -141,6 +144,15 @@ export const CommandsContainer = styled.section`
         font-weight: bolder;
         color: ${props => props.theme.grey};
       }
+
+      @media (max-width: 500px) {
+        flex-direction: column;
+
+        span {
+          margin: 0;
+          margin-top: 4px;
+        }
+      }
     }
 
     p {
@@ -149,5 +161,9 @@ export const CommandsContainer = styled.section`
       font-weight: bolder;
       color: ${props => props.theme.grey};
     }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 20px 20px;
   }
 `;

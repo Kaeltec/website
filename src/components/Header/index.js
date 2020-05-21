@@ -41,6 +41,13 @@ const HeaderComponent = () => {
         >
           Me Traduza
         </a>
+        <a
+          href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MX8CFVD9Z5SCN&source=url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Doar
+        </a>
       </Navigation>
     </Container>
   );

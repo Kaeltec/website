@@ -79,7 +79,7 @@ const CommandsPage = ({ navigate, location: { search } }) => {
                 <div key={command.name}>
                   <span>
                     <strong>{command.name}</strong>
-                    <span>{command.usage}</span>
+                    {command.usage && <span>{command.usage}</span>}
                   </span>
 
                   <p>{command.description || 'Descrição não informada'}</p>
