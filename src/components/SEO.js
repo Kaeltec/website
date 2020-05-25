@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEOComponent = ({ title, description, image, meta }) => {
+const SEOComponent = ({ url, title, description, image, meta }) => {
   const {
     site: { siteMetadata },
   } = useStaticQuery(
@@ -52,6 +52,10 @@ const SEOComponent = ({ title, description, image, meta }) => {
         {
           name: 'og:image:height',
           content: '1080',
+        },
+        {
+          property: 'og:url',
+          content: urlJoin(siteMetadata.siteUrl, url),
         },
         {
           property: 'og:title',
@@ -104,6 +108,7 @@ const SEOComponent = ({ title, description, image, meta }) => {
 };
 
 SEOComponent.propTypes = {
+  url: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
@@ -116,6 +121,7 @@ SEOComponent.propTypes = {
 };
 
 SEOComponent.defaultProps = {
+  url: '/',
   title: 'Kael | The best discord fun bot',
   description:
     'Kael a Brazilian bot designed for Discord server management. Get access to my commands divided by category by accessing my website.',
