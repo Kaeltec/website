@@ -5,18 +5,10 @@ export const Container = styled.section`
 `;
 
 export const WaveContainer = styled.div`
-  position: absolute;
-  z-index: 0;
-  height: 20px;
-  width: 100%;
-
-  bottom: 0;
-  background-color: ${props => props.theme.dark_solid};
-
   svg {
     position: absolute;
     z-index: 0;
-    bottom: 20px;
+    bottom: 0;
     fill: ${props => props.theme.dark_solid};
   }
 `;
