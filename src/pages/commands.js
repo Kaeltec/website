@@ -23,7 +23,7 @@ const CommandsPage = ({ navigate, location: { search } }) => {
   useEffect(() => {
     async function getCommands() {
       const { commands, categories } = await api
-        .get('client/commands')
+        .get('commands')
         .then(r => r.data);
 
       setCommands({ commands, categories });
