@@ -5,7 +5,7 @@ module.exports = {
     title: 'Kael | The best discord fun bot',
     description: 'The best discord fun bot.',
     author: 'Kaeltec Team',
-    siteUrl: 'https://beta.kaeltec.fun',
+    siteUrl: 'https://kaelbot.xyz',
     social: {
       twitter: {
         username: 'BotKael',
