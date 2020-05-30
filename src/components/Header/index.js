@@ -35,7 +35,7 @@ const HeaderComponent = () => {
         <Link to="/commands">Comandos</Link>
         <Link to="/support">Suporte</Link>
         <a
-          href="https://translate.kaeltec.fun/"
+          href="https://translate.kaelbot.xyz/"
           target="_blank"
           rel="noopener noreferrer"
         >

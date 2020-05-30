@@ -4,4 +4,4 @@ Allow: /
 Disallow: /404
 Disallow: /404.html
 
-sitemap: https://kaeltec.fun/sitemap.xml
+sitemap: https://kaelbot.xyz/sitemap.xml

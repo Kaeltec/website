@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://kaeltec.fun',
+        siteUrl: 'https://kaelbot.xyz',
       },
     },
     {
@@ -66,7 +66,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Kael the best discord fun bot',
-        short_name: 'kaeltec.fun',
+        short_name: 'kaelbot.xyz',
         start_url: '/',
         display: 'minimal-ui',
         icon: 'src/assets/images/logo.png',
