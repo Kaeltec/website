@@ -45,9 +45,15 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-google-adsense',
+      options: {
+        publisherId: 'ca-pub-5563002632241077',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-166754587-1',
+        trackingId: 'UA-166754587-2',
       },
     },
     {
