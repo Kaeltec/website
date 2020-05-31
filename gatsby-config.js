@@ -12,10 +12,6 @@ module.exports = {
         creator: '@BotKael',
         url: 'https://twitter.com/BotKael',
       },
-      github: {
-        username: 'Kaeltec',
-        url: 'https://github.com/Kaeltec',
-      },
     },
   },
   plugins: [
@@ -23,6 +19,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -36,6 +33,13 @@ module.exports = {
         rule: {
           include: /\.svg$/,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-minify',
+      options: {
+        minifyJS: true,
+        minifyCSS: true,
       },
     },
     {
@@ -70,7 +74,7 @@ module.exports = {
         start_url: '/',
         display: 'minimal-ui',
         icon: 'src/assets/images/logo.png',
-        background_color: '#f23859',
+        background_color: '#eb798d',
         theme_color: '#f23859',
       },
     },
