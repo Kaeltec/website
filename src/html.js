@@ -17,7 +17,7 @@ const HTML = ({
 
       <meta
         name="keywords"
-        content="discord, discord-bot, bot, github, javascript, node, nodejs, kael, kaeltec, kaelbot, kael-bot, kael bot"
+        content="discord, discord-bot, bot, kael, kaeltec, kaelbot, kael-bot, kael bot, kaelwebsite, kael-website, kael website"
       />
 
       <meta name="author" content="Kaeltec Team" />
@@ -34,6 +34,9 @@ const HTML = ({
         href="https://fonts.googleapis.com/css?family=Righteous|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
         rel="stylesheet"
       />
+
+      <link href="/css/normalize.css" rel="stylesheet" />
+      <link href="/css/styles.css" rel="stylesheet" />
 
       {headComponents}
     </head>
