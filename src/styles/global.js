@@ -8,7 +8,6 @@ export default createGlobalStyle`
   body {
     font: 1.6rem 'Righteous', cursive;
     color: #fff;
-
     transition: font-size 200ms ease-in-out;
     background-color: ${props => props.theme.dark_solid};
   }
