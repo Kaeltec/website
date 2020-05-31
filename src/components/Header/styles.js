@@ -98,11 +98,13 @@ export const ResponsiveButton = styled.button`
 
 export const Navigation = styled.nav`
   display: flex;
+  width: 100%;
   margin-left: 20px;
   align-items: center;
 
   a {
     font-size: 2rem;
+    opacity: 0.8;
     transition: opacity 200ms;
 
     & + a {
@@ -110,7 +112,7 @@ export const Navigation = styled.nav`
     }
 
     &:hover {
-      opacity: 0.8;
+      opacity: 1;
     }
   }
 
@@ -128,13 +130,17 @@ export const Navigation = styled.nav`
     flex-direction: column;
     transition: top 200ms, opacity 200ms, background-color 200ms;
 
-    a {
+    & > a {
       width: 100%;
       margin: 0 !important;
 
       text-align: center;
       padding: 15px 0;
-      border-top: 1px solid rgba(79, 84, 92, 0.4);
+      border-bottom: 1px solid rgba(79, 84, 92, 0.4);
+
+      &:nth-child(1) {
+        border-top: 1px solid rgba(79, 84, 92, 0.4);
+      }
     }
 
     ${props => {
@@ -147,5 +153,30 @@ export const Navigation = styled.nav`
         `
       );
     }}
+  }
+`;
+
+export const DashBoardContainer = styled.div`
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+
+  a {
+    padding: 10px 30px;
+    opacity: 0.8;
+    font-size: 2rem;
+
+    border-radius: 50px;
+    border: 2px solid hsla(0, 0%, 100%, 0.8);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: opacity 200ms;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 15px 0;
   }
 `;

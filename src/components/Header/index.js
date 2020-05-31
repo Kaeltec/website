@@ -8,6 +8,7 @@ import {
   BrandsContainer,
   ResponsiveButton,
   Navigation,
+  DashBoardContainer,
 } from './styles';
 
 const HeaderComponent = () => {
@@ -48,6 +49,16 @@ const HeaderComponent = () => {
         >
           Doar
         </a>
+
+        <DashBoardContainer>
+          <a
+            href="https://dash.kaelbot.xyz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dashboard
+          </a>
+        </DashBoardContainer>
       </Navigation>
     </Container>
   );
