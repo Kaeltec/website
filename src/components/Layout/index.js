@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import colors from '../../config/colors';
 
 import Header from '../Header';
+import Footer from '../Footer';
 
 import GlobalStyles from '../../styles/global';
 
@@ -14,8 +15,8 @@ const LayoutComponent = ({ children }) => (
   <ThemeProvider theme={colors}>
     <Container>
       <Header />
-
       <Content>{children}</Content>
+      <Footer />
 
       <GlobalStyles />
     </Container>
