@@ -78,7 +78,7 @@ module.exports = {
         theme_color: '#f23859',
       },
     },
-    'gatsby-plugin-offline',
+    'gatsby-plugin-remove-serviceworker',
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
