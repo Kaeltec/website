@@ -1,11 +1,9 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import loaderImage from '../assets/images/loader.png';
-
 const LoaderComponent = props => (
   <Container {...props}>
-    <img src={loaderImage} alt="Loader" />
+    <img src="/img/loader.png" alt="Loader" />
   </Container>
 );
 
