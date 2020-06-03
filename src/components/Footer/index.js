@@ -12,9 +12,7 @@ const FooterComponent = () => (
       <p>
         Para assuntos tais sobre pagamento, denúncias, ou comercial, contate{' '}
         <span>
-          <a href="mailto:kaeltecoficial@hotmail.com">
-            kaeltecoficial@hotmail.com
-          </a>
+          <a href="mailto:support@kaelbot.xyz">support@kaelbot.xyz</a>
         </span>
       </p>
     </Content>

@@ -63,6 +63,7 @@ export const Content = styled.section`
 
 export const Navigation = styled.nav.attrs({ className: 'scroll' })`
   display: flex;
+  overflow-y: auto;
   padding: 20px 40px;
   flex-direction: column;
   border-right: 1px solid rgba(255, 255, 255, 0.25);
@@ -120,8 +121,9 @@ export const Button = styled(Link)`
     `}
 `;
 
-export const CommandsContainer = styled.section`
+export const CommandsContainer = styled.section.attrs({ className: 'scroll' })`
   display: flex;
+  overflow-y: auto;
   padding: 20px 40px;
   flex-direction: column;
 
