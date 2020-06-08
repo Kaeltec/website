@@ -6,12 +6,12 @@ class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
 
-    return {
-      styleElements: sheet.getStyleElement(),
-      ...renderPage(Component => props => {
-        return sheet.collectStyles(<Component {...props} />);
-      }),
-    };
+    const page = renderPage(Component => props => {
+      return sheet.collectStyles(<Component {...props} />);
+    });
+
+    const styleElements = sheet.getStyleElement();
+    return { ...page, styleElements };
   }
 
   render() {
