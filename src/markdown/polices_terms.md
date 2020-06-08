@@ -1,15 +1,15 @@
 # Termos de Uso
 
-Última alteração em: 04/06/2020
+### Última alteração em: 04/06/2020
 
-Primeiro — Disposições gerais:
+### Primeiro — Disposições gerais:
 1- Todos os termos e condições mencionados nesta página são aplicados a todos os usuários do website.
 
 2- É possível alterar os termos e condições a qualquer momento ou adicionar novo por isso, solicitamos aos usuários/clientes que os vejam de tempos em tempos para estar cientes de quaisquer novos termos adicionados.
 
-3. O usuário tem o direito de sanar suas dúvidas, reportar bugs e falhas, solicitar programas de comunidade que o bot oferece contatando-nos via endereço de e-mail: support@kaeltebot.xyz ou kaeltecoficial@hotmail.com
+3- O usuário tem o direito de sanar suas dúvidas, reportar bugs e falhas, solicitar programas de comunidade que o bot oferece contatando-nos via endereço de e-mail: **support@kaeltebot.xyz** ou **kaeltecoficial@hotmail.com**
 
-Segundo — Termos de Uso:
+### Segundo — Termos de Uso:
 1- A Administração deste website se isenta da responsabilidade por qualquer dano ou perda ao usuário/cliente como resultado de seu mau uso do nosso website.
 
 2- A Administração deste website tem o direito de interromper a assinatura de um usuário/cliente se ele violar os termos e condições do nosso website.
