@@ -1,6 +1,6 @@
 # Política de Privacidade
 
-**Última alteração em: 04/06/2020**
+### **Última alteração em: 04/06/2020**
 
 Ao prosseguir com o uso de nosso website, você estará concordando em ter lido a nossa Política de Uso e Privacidade.
 
@@ -33,11 +33,11 @@ A fim de proporcionar maior segurança e transparência, poderemos alterar perio
 ### 4. Links para outros websites:
 
 4.1 — Este website poderá conter links para outros sites externos, parceiros e/ou patrocinadores, que podem ter políticas de privacidade diferentes das nossas, estando assim sujeitas às suas próprias práticas de obtenção e uso de dados.
-4.2 — A Kaeltec não se responsabiliza pelo conteúdo dos websites e nem pelo seu manuseio das informações coletadas.
+4.2 — A **Kaeltec** não se responsabiliza pelo conteúdo dos websites e nem pelo seu manuseio das informações coletadas.
 
 ### 5. Crianças:
 
-5.1 — Este site não se destina a menores de 13 anos de idade. A Kaeltec não coleta ou solicita dados pessoalmente identificáveis de visitantes dessa faixa etária intencionalmente, exceto quando permitido pela respectiva legislação. Qualquer pessoa que autentique em nosso website declara que tem 13 anos de idade ou mais.
+5.1 — Este site não se destina a menores de 13 anos de idade. A **Kaeltec** não coleta ou solicita dados pessoalmente identificáveis de visitantes dessa faixa etária intencionalmente, exceto quando permitido pela respectiva legislação. Qualquer pessoa que autentique em nosso website declara que tem 13 anos de idade ou mais.
 
 ### 6. Segurança:
 
