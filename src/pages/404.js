@@ -1,16 +1,31 @@
+import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 
-const NotFoundPage = ({ navigate }) => {
+import Layout from '@app/components/Layout';
+import Loader from '@app/components/Loader';
+
+const NotFoundPage = () => {
+  const router = useRouter();
+
   useEffect(() => {
-    navigate('/');
-  }, [navigate]);
+    router.push('/');
+  }, [router]);
 
-  return <></>;
-};
-
-NotFoundPage.propTypes = {
-  navigate: PropTypes.func.isRequired,
+  return (
+    <Layout>
+      <div
+        style={{
+          display: 'flex',
+          flexGrow: '1',
+          height: '100%',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Loader />
+      </div>
+    </Layout>
+  );
 };
 
 export default NotFoundPage;

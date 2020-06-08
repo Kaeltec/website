@@ -1,132 +1,68 @@
+import NextHead from 'next/head';
+import PropTypes from 'prop-types';
 import React from 'react';
 import urlJoin from 'url-join';
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
 
-const SEOComponent = ({ url, title, description, image, meta }) => {
-  const {
-    site: { siteMetadata },
-  } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            siteUrl
-            social {
-              twitter {
-                url
-                creator
-              }
-            }
-          }
-        }
-      }
-    `,
-  );
+const BASE_URL = base => {
+  return !/^(https|http):\/\/+/.test(base)
+    ? urlJoin('https://kaelbot.xyz', base)
+    : base;
+};
 
-  const metaDescription = description || siteMetadata.description;
-  const metaImage = urlJoin(siteMetadata.siteUrl, image);
+const HeadComponent = ({ title, description, image, url, children }) => {
+  const metaImage = BASE_URL(image);
 
   return (
-    <Helmet
-      title={title || siteMetadata.title}
-      htmlAttributes={{ lang: 'pt-BR' }}
-      meta={[
-        {
-          name: 'description',
-          content: metaDescription,
-        },
-        {
-          name: 'image',
-          content: metaImage,
-        },
-        // Open Graph
-        {
-          name: 'og:image:width',
-          content: '1920',
-        },
-        {
-          name: 'og:image:height',
-          content: '1080',
-        },
-        {
-          property: 'og:url',
-          content: urlJoin(siteMetadata.siteUrl, url),
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:image',
-          content: metaImage,
-        },
-        {
-          property: 'og:image:secure_url',
-          content: metaImage,
-        },
-        // Twitter
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-        {
-          name: 'twitter:creator',
-          content: siteMetadata.social.twitter.creator,
-        },
-        {
-          name: 'twitter:site',
-          content: siteMetadata.social.twitter.creator,
-        },
-        {
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription,
-        },
-        {
-          name: 'twitter:image',
-          content: metaImage,
-        },
-        {
-          name: 'twitter:image:src',
-          content: metaImage,
-        },
-      ].concat(meta)}
-    />
+    <NextHead>
+      <title>{title}</title>
+
+      <link itemProp="url" href="https://nextjs-main-template.now.sh" />
+      <meta itemProp="name" content={title} />
+      <meta itemProp="description" content={description} />
+
+      <meta name="image" content={metaImage} />
+      <meta name="description" content={description} />
+
+      <meta property="og:title" content={title} />
+      <meta property="og:url" content={BASE_URL(url)} />
+      <meta property="og:description" content={description} />
+
+      <meta property="og:image:width" content="1920" />
+      <meta property="og:image:height" content="1080" />
+
+      <meta property="og:image" content={metaImage} />
+      <meta property="og:image:secure_url" content={metaImage} />
+
+      <meta name="twitter:site" content="aa" />
+      <meta name="twitter:creator" content="aa" />
+      <meta name="twitter:card" content="summary_large_image" />
+
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+
+      <meta name="twitter:image" content={metaImage} />
+      <meta name="twitter:image:src" content={metaImage} />
+
+      {children}
+    </NextHead>
   );
 };
 
-SEOComponent.propTypes = {
-  url: PropTypes.string,
+HeadComponent.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
-  meta: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      content: PropTypes.string,
-    }),
-  ),
+  url: PropTypes.string,
+  children: PropTypes.node,
 };
 
-SEOComponent.defaultProps = {
-  url: '/',
+HeadComponent.defaultProps = {
   title: 'Kael | The best discord fun bot',
   description:
     'Kael a Brazilian bot designed for Discord server management. Get access to my commands divided by category by accessing my website.',
   image: '/img/meta-image.png',
-  meta: [],
+  url: '',
+  children: null,
 };
 
-export default SEOComponent;
+export default HeadComponent;

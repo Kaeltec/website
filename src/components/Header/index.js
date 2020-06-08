@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
 
-import Image from '../Image';
+import Link from '../Link';
 
 import {
   Container,
@@ -17,8 +16,8 @@ const HeaderComponent = () => {
   return (
     <Container>
       <BrandsContainer>
-        <Link to="/">
-          <Image source="images/logo.png" alt="Logo" />
+        <Link href="/">
+          <img src="/img/logo.png" alt="Logo" />
           <span>Kael</span>
         </Link>
 
@@ -33,8 +32,8 @@ const HeaderComponent = () => {
       </BrandsContainer>
 
       <Navigation open={navbarOpen}>
-        <Link to="/commands">Comandos</Link>
-        <Link to="/support">Suporte</Link>
+        <Link href="/commands">Comandos</Link>
+        <Link href="/support">Suporte</Link>
         <a
           href="https://translate.kaelbot.xyz/"
           target="_blank"

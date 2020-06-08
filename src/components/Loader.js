@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const LoaderComponent = props => (
   <Container {...props}>
@@ -7,20 +7,20 @@ const LoaderComponent = props => (
   </Container>
 );
 
-const spinner = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`;
-
 const Container = styled.div`
   img {
     width: 100px;
     height: 100px;
-    animation: ${spinner} 800ms linear infinite;
+    animation: spinner 800ms linear infinite;
+
+    @keyframes spinner {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
   }
 `;
 

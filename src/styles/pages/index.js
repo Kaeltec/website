@@ -7,7 +7,7 @@ export const Container = styled.section`
 `;
 
 export const WaveContainer = styled.div`
-  svg {
+  img {
     position: absolute;
     z-index: 0;
     bottom: 0;
@@ -15,13 +15,12 @@ export const WaveContainer = styled.div`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.div.attrs({ className: 'padding' })`
   position: relative;
   display: flex;
   z-index: 3;
-  max-width: 800px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 0 20px;
 
   text-align: center;
   flex-direction: column;
@@ -79,5 +78,9 @@ export const ButtonsContainer = styled.div`
 
   @media (max-width: 612px) {
     flex-direction: column;
+
+    a {
+      width: 100%;
+    }
   }
 `;

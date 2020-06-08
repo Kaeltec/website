@@ -18,34 +18,6 @@ export const Container = styled.div.attrs({ className: 'padding' })`
   }
 `;
 
-export const Hero = styled.div`
-  display: flex;
-  margin-top: 30px;
-  padding: 15px;
-  background-color: ${props => props.theme.dark_solid};
-
-  p {
-    & + p {
-      margin-left: 30px;
-    }
-
-    span {
-      font-weight: bold;
-      color: ${props => props.theme.grey};
-    }
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-
-    p + p {
-      margin: 0;
-      margin-top: 10px;
-    }
-  }
-`;
-
 export const Content = styled.section`
   display: flex;
   height: 600px;
@@ -121,52 +93,49 @@ export const Button = styled(Link)`
     `}
 `;
 
-export const CommandsContainer = styled.section.attrs({ className: 'scroll' })`
-  display: flex;
-  flex-grow: 1;
+export const MarkdownContainer = styled.section.attrs({
+  className: 'scroll',
+})`
   overflow-y: auto;
-  padding: 20px 40px;
-  flex-direction: column;
+  padding: 0 20px;
 
-  div {
-    & + div {
-      margin-top: 20px;
-    }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 10px 0;
+  }
 
-    span {
-      display: flex;
+  p {
+    margin: 10px 0;
+    text-align: justify;
+  }
 
-      strong {
-        text-transform: uppercase;
-        font-size: 2.6rem;
-      }
+  ul {
+    margin: 20px 0;
+    margin-left: 20px;
 
-      span {
-        margin-left: 20px;
-        font-size: 2rem;
-        font-weight: bolder;
-        color: ${props => props.theme.grey};
-      }
-
-      @media (max-width: 500px) {
-        flex-direction: column;
-
-        span {
-          margin: 0;
-          margin-top: 4px;
-        }
-      }
-    }
-
-    p {
+    li {
+      position: relative;
+      display: block;
       margin-top: 10px;
-      font-size: 2rem;
-      font-weight: bolder;
-      color: ${props => props.theme.grey};
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 5px;
+        left: -15px;
+
+        border-radius: 50%;
+        background-color: #fff;
+      }
     }
   }
 
   @media (max-width: 1024px) {
-    padding: 20px 20px;
+    padding: 20px;
   }
 `;

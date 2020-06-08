@@ -37,5 +37,5 @@ jobs:
       - name: Check Linting
         run: yarn lint
 
-      - name: Build Gatsby Site
+      - name: Build Website
         run: yarn build

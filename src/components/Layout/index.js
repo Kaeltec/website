@@ -1,26 +1,17 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider } from 'styled-components';
+import React from 'react';
 
-import colors from '../../config/colors';
-
-import Header from '../Header';
 import Footer from '../Footer';
-
-import GlobalStyles from '../../styles/global';
+import Header from '../Header';
 
 import { Container, Content } from './styles';
 
 const LayoutComponent = ({ children }) => (
-  <ThemeProvider theme={colors}>
-    <Container>
-      <Header />
-      <Content>{children}</Content>
-      <Footer />
-
-      <GlobalStyles />
-    </Container>
-  </ThemeProvider>
+  <Container>
+    <Header />
+    <Content>{children}</Content>
+    <Footer />
+  </Container>
 );
 
 LayoutComponent.propTypes = {

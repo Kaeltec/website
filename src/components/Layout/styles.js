@@ -11,6 +11,8 @@ export const Container = styled.div.attrs({
 `;
 
 export const Content = styled.main`
+  display: flex;
   flex-grow: 1;
+  flex-direction: column;
   padding-top: 120px;
 `;

@@ -1,20 +1,20 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.header`
+export const Container = styled.header.attrs({ className: 'padding' })`
   position: absolute;
   display: flex;
   align-items: center;
 
   z-index: 999;
   width: 100%;
-  padding: 20px 60px;
+  padding: 20px 0;
 
   top: 0;
   left: 0;
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0;
   }
 `;
 

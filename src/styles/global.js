@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  html {
-    background-color: #222429;
-  }
-
   body {
     font: 1.6rem 'Righteous', cursive;
     color: #fff;
@@ -29,5 +25,43 @@ export default createGlobalStyle`
   a,
   button {
     color: #fff;
+  }
+
+  .padding {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (max-width: 1024px) {
+    html {
+      font-size: 50%;
+    }
+
+    .padding {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  
+  @media (max-width: 612px) {
+    html {
+      font-size: 40%;
+    }
+
+    .padding {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (max-width: 306px) {
+    html {
+      font-size: 30%;
+    }
+
+    .padding {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 `;

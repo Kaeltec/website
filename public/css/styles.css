@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Platonica';
+  src: url('/fonts/platonica.otf');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.6rem 'Righteous', cursive;
+  color: #fff;
+  background-color: #222429;
+}
