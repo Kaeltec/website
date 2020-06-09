@@ -5,12 +5,13 @@
 
 html {
   font-size: 62.5%;
+  background-color: #313339;
 }
 
 body {
   font: 1.6rem 'Righteous', cursive;
   color: #fff;
-  background-color: #222429;
+  background-color: #313339;
 }
 
 a,

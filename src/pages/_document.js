@@ -48,6 +48,8 @@ class MyDocument extends Document {
           <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
           <link rel="icon" href="/favicon.png" />
+          <link rel="manifest" href="/manifest.webmanifest" />
+
           <link
             rel="apple-touch-icon"
             sizes="48x48"
