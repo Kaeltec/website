@@ -43,6 +43,9 @@ const HeadComponent = ({ title, description, image, url, children }) => {
       <meta name="twitter:image" content={metaImage} />
       <meta name="twitter:image:src" content={metaImage} />
 
+      <link rel="icon" href="/favicon.png" />
+      <link rel="shortcut icon" href="/favicon.png" />
+
       {children}
     </NextHead>
   );
