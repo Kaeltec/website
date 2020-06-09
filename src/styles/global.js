@@ -9,7 +9,7 @@ export default createGlobalStyle`
   }
 
   body,
-  &.scroll {
+  .scroll {
     &::-webkit-scrollbar-thumb {
       background-color: ${props => props.theme.grey};
     }
