@@ -78,6 +78,10 @@ typings/
 # Next.js build output
 .next
 __next
+public/sw.js
+public/sw.js.map
+public/workbox-[a-zA-Z0-9]*.js
+public/workbox-[a-zA-Z0-9]*.js.map
 
 # Nuxt.js build / generate output
 .nuxt
