@@ -16,7 +16,7 @@ const HeadComponent = ({ title, description, image, url, children }) => {
     <NextHead>
       <title>{title}</title>
 
-      <link itemProp="url" href="https://nextjs-main-template.now.sh" />
+      <link itemProp="url" href="https://kaelbot.xyz" />
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
 
@@ -33,8 +33,8 @@ const HeadComponent = ({ title, description, image, url, children }) => {
       <meta property="og:image" content={metaImage} />
       <meta property="og:image:secure_url" content={metaImage} />
 
-      <meta name="twitter:site" content="aa" />
-      <meta name="twitter:creator" content="aa" />
+      <meta name="twitter:site" content="@BotKael" />
+      <meta name="twitter:creator" content="@BotKael" />
       <meta name="twitter:card" content="summary_large_image" />
 
       <meta name="twitter:title" content={title} />
