@@ -62,13 +62,15 @@ export const Content = styled.section`
 export const Navigation = styled.nav.attrs({ className: 'scroll' })`
   display: flex;
   overflow-y: auto;
-  min-width: 300px;
+  width: 100%;
+  max-width: 300px;
 
   padding: 20px 40px;
   flex-direction: column;
   border-right: 1px solid rgba(255, 255, 255, 0.25);
 
   @media (max-width: 1024px) {
+    max-width: 100%;
     padding: 20px 20px;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);

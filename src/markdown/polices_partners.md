@@ -5,7 +5,7 @@ As diretrizes para parceiros esclarece o que procuramos em novos parceiros e com
 
 ### O que procuramos em novos parceiros?
 
-Alguém que aprecie o projeto do kael, usuários que estejam a bastante tempo no Discord seja em uma comunidade mantida por apenas usuários até os que estão no ramo como influencers, artista e ou artista musical.
+Alguém que aprecie o projeto do kael, usuários que estejam há bastante tempo no Discord, desde uma simples comunidade mantida por usuários até comunidades oficiais de influenciadores, artistas ou músicos.
 
 ### Me qualifico para parceiro, o que fazer agora?
 
