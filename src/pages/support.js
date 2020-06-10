@@ -5,7 +5,7 @@ import Loader from '@app/components/Loader';
 
 const SupportPage = () => {
   useEffect(() => {
-    window.location.replace('https://discord.com/invite/VCTWvb6');
+    window.location.replace('https://discord.com/invite/dDEt6eU');
   }, []);
 
   return (
