@@ -7,7 +7,8 @@ export const Container = styled.footer`
 
 export const Content = styled.div.attrs({ className: 'padding' })`
   display: flex;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: ${props => props.theme.dark_solid};
 
   align-items: center;
@@ -67,7 +68,8 @@ export const Content = styled.div.attrs({ className: 'padding' })`
 `;
 
 export const CopyRightContainer = styled.div.attrs({ className: 'padding' })`
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: ${props => props.theme.favcolor};
 
   p {

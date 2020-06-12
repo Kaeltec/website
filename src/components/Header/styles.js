@@ -7,14 +7,16 @@ export const Container = styled.header.attrs({ className: 'padding' })`
 
   z-index: 999;
   width: 100%;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   top: 0;
   left: 0;
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 `;
 

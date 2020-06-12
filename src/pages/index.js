@@ -66,7 +66,7 @@ const HomePage = () => (
                   <section>
                     <img src={partner.icon} alt="Icon" />
                     <span>
-                      <span style={{ color: '#31bd56' }}>
+                      <span style={{ color: '#32d15c' }}>
                         {partner.members}
                       </span>{' '}
                       Membros

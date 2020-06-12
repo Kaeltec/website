@@ -90,7 +90,8 @@ export const PartnersContent = styled.div.attrs({ className: 'padding' })`
   display: flex;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   flex-wrap: wrap;
   align-items: center;
@@ -154,7 +155,7 @@ export const PartnerItem = styled.section`
         border-top: 1px solid rgba(255, 255, 255, 0.3);
 
         p {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
         }
       }
     }
