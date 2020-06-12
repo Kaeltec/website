@@ -1,22 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
-  position: relative;
+export const Container = styled.div`
   height: 100%;
-  padding: 40px 0;
 `;
 
-export const WaveContainer = styled.div`
-  img {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    fill: ${props => props.theme.dark_solid};
-  }
-`;
-
-export const Content = styled.div.attrs({ className: 'padding' })`
-  position: relative;
+export const KaelContainer = styled.section.attrs({ className: 'padding' })`
   display: flex;
   z-index: 3;
   max-width: 1024px;
@@ -83,4 +71,99 @@ export const ButtonsContainer = styled.div`
       width: 100%;
     }
   }
+`;
+
+export const PartnersContainer = styled.section.attrs({ id: 'partners' })`
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #111218;
+
+  h1 {
+    margin: 20px 0;
+    font-size: 4.2rem;
+    text-align: center;
+  }
+`;
+
+export const PartnersContent = styled.div.attrs({ className: 'padding' })`
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const PartnerItem = styled.section`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  height: 360px;
+  max-width: 300px;
+  margin: 20px;
+  flex-direction: column;
+
+  h3 {
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  & > div {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    flex-direction: column;
+
+    a {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      padding: 8px 10px;
+      font-size: 1.8rem;
+      background-color: ${props => props.theme.favcolor};
+    }
+
+    section {
+      &:nth-child(1) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        span {
+          margin-top: 10px;
+          font-size: 1.6rem;
+        }
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: 10px;
+        padding-top: 10px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+`;
+
+export const WaveContainer = styled.svg`
+  position: relative;
+  z-index: 0;
+  top: -40px;
+  left: 0%;
 `;

@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font: 1.6rem 'Righteous', cursive;
     color: #fff;
