@@ -83,7 +83,7 @@ export const PartnersContainer = styled.section.attrs({ id: 'partners' })`
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #111218;
+  background-color: #222429;
 
   h1 {
     margin: 20px 0;

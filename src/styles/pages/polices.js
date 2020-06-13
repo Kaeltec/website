@@ -23,6 +23,7 @@ export const Content = styled.section`
   height: 600px;
   margin-top: 40px;
   padding: 10px 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
   background-color: ${props => props.theme.dark_solid};
 
   @media (max-width: 1024px) {

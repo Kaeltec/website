@@ -8,7 +8,8 @@ export const Container = styled.div.attrs({
 
   flex-direction: column;
   justify-content: space-between;
-  background-image: url('/img/background.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%),
+    url('/img/background.png');
   background-size: 300px 240px;
 `;
 
