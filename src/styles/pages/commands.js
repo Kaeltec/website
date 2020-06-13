@@ -22,6 +22,7 @@ export const Hero = styled.div`
   display: flex;
   margin-top: 30px;
   padding: 15px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
   background-color: ${props => props.theme.dark_solid};
 
   p {
@@ -51,6 +52,7 @@ export const Content = styled.section`
   height: 600px;
   margin-top: 40px;
   padding: 10px 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
   background-color: ${props => props.theme.dark_solid};
 
   @media (max-width: 1024px) {

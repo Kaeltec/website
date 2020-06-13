@@ -8,6 +8,8 @@ export const Container = styled.div.attrs({
 
   flex-direction: column;
   justify-content: space-between;
+  background-image: url('/img/background.png');
+  background-size: 300px 240px;
 `;
 
 export const Content = styled.main`

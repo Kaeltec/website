@@ -5,29 +5,35 @@ export const Container = styled.div`
 `;
 
 export const KaelContainer = styled.section.attrs({ className: 'padding' })`
-  display: flex;
-  z-index: 3;
-  max-width: 1024px;
-  margin: 0 auto;
+  position: relative;
+  padding-bottom: 150px;
 
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  & > section {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    max-width: 1024px;
+    margin: 0 auto;
 
-  img {
-    width: 20rem !important;
-    height: 20rem !important;
-  }
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  h1 {
-    margin: 15px 0;
-    font-size: 2.8rem;
-  }
+    img {
+      width: 20rem !important;
+      height: 20rem !important;
+    }
 
-  h2 {
-    font-size: 1.7rem;
-    color: ${props => props.theme.grey};
+    h1 {
+      margin: 15px 0;
+      font-size: 2.8rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      color: ${props => props.theme.favcolor_dark};
+    }
   }
 `;
 
@@ -90,7 +96,6 @@ export const PartnersContent = styled.div.attrs({ className: 'padding' })`
   display: flex;
   max-width: 1024px;
   margin: 0 auto;
-  padding-top: 40px;
   padding-bottom: 40px;
 
   flex-wrap: wrap;
@@ -163,8 +168,8 @@ export const PartnerItem = styled.section`
 `;
 
 export const WaveContainer = styled.svg`
-  position: relative;
+  position: absolute;
   z-index: 0;
-  top: -40px;
+  bottom: 0;
   left: 0%;
 `;

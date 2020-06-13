@@ -23,38 +23,40 @@ const HomePage = () => (
     <Layout>
       <Container>
         <KaelContainer>
-          <img src="/img/logo.png" alt="Logo" />
+          <section>
+            <img src="/img/logo.png" alt="Logo" />
 
-          <h1>Kael um bot brasileiro para gestão de servidores Discord.</h1>
-          <h2>
-            Oi, eu sou o Kael! Um porquinho charmoso que alegra seus dias e faz
-            com que membros do seu servidor sintam-se felizes.
-          </h2>
+            <h1>Kael um bot brasileiro para gestão de servidores Discord.</h1>
+            <h2>
+              Oi, eu sou o Kael! Um porquinho charmoso que alegra seus dias e
+              faz com que membros do seu servidor sintam-se felizes.
+            </h2>
 
-          <ButtonsContainer>
-            <a
-              href="https://discord.com/oauth2/authorize?client_id=412593783696261121&scope=bot&permissions=2146958591"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Adicionar
-            </a>
-            <Link href="#partners">Parceiros</Link>
-          </ButtonsContainer>
-        </KaelContainer>
+            <ButtonsContainer>
+              <a
+                href="https://discord.com/oauth2/authorize?client_id=412593783696261121&scope=bot&permissions=2146958591"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Adicionar
+              </a>
+              <Link href="#partners">Parceiros</Link>
+            </ButtonsContainer>
+          </section>
 
-        <PartnersContainer>
           <WaveContainer
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
           >
             <path
-              fill="#313339"
+              fill="#111218"
               fillOpacity="1"
-              d="M0,224L48,240C96,256,192,288,288,272C384,256,480,192,576,186.7C672,181,768,235,864,224C960,213,1056,139,1152,144C1248,149,1344,235,1392,277.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+              d="M0,256L24,224C48,192,96,128,144,101.3C192,75,240,85,288,122.7C336,160,384,224,432,224C480,224,528,160,576,138.7C624,117,672,139,720,144C768,149,816,139,864,112C912,85,960,43,1008,64C1056,85,1104,171,1152,181.3C1200,192,1248,128,1296,128C1344,128,1392,192,1416,224L1440,256L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
             />
           </WaveContainer>
+        </KaelContainer>
 
+        <PartnersContainer>
           <h1>Parceiros</h1>
 
           <PartnersContent>
