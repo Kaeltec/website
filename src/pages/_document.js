@@ -91,6 +91,12 @@ class MyDocument extends Document {
             href="/icons/icon-512x512.png"
           />
 
+          <script
+            async
+            data-ad-client="ca-pub-5563002632241077"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          />
+
           {styleElements}
         </Head>
 
