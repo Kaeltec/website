@@ -2,6 +2,6 @@ User-agent: *
 
 Allow: /
 Disallow: /404
-Disallow: /*?*
+Disallow: /*?
 
 sitemap: https://kaelbot.xyz/sitemap.xml
