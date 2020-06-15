@@ -6,7 +6,7 @@ Ao prosseguir com o uso de nosso website, você estará concordando em ter lido 
 
 Ao prosseguir com o uso de nosso website, você declara concordar com os Termos de Uso do Discord.
 
-Podemos ser contatados pelo nosso servidor do Discord, localizado na nossa página inicial, em caso de dúvidas e ou pelo nosso endereço de e-mail **support@kaelbot.xyz**.
+Podemos ser contatados pelo nosso servidor do Discord, localizado na nossa página inicial, ou pelo nosso endereço de e-mail **support@kaelbot.xyz**.
 
 A nossa Política de Privacidade esclarece como coletamos e utilizamos as informações para que nossos visitantes sintam-se seguros ao navegar e utilizar o nosso website.
 
