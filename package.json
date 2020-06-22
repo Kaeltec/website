@@ -2,7 +2,6 @@
   "name": "next-main-template",
   "version": "1.0.0",
   "license": "AGPL-3.0",
-  "author": "Pablo Vinícius <dev.pablo.vinicius@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "start": "next start",
