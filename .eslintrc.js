@@ -35,11 +35,13 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
-    'no-param-reassign': 'off',
     'consistent-return': 'off',
-    'jsx-a11y/label-has-associated-control': 'off',
+    'no-param-reassign': 'off',
+
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-one-expression-per-line': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/jsx-filename-extension': [
