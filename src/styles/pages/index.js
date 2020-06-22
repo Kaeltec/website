@@ -94,7 +94,7 @@ export const PartnersContainer = styled.section.attrs({ id: 'partners' })`
 
 export const PartnersContent = styled.div.attrs({ className: 'padding' })`
   display: flex;
-  max-width: 1024px;
+  max-width: 1140px;
   margin: 0 auto;
   padding-bottom: 40px;
 
