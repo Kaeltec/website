@@ -1,3 +1,34 @@
 [build]
   command = "next build && next export"
   publish = "out"
+
+[[plugins]]
+  package = "netlify-plugin-subfont"
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+[[plugins]]
+  package = "netlify-plugin-image-optim"
+
+[[plugins]]
+  package = "netlify-plugin-inline-source"
+
+[[plugins]]
+  package = "netlify-plugin-inline-critical-css"
+
+[[plugins]]
+  package = "netlify-plugin-cache-nextjs"
+
+  [plugins.inputs]
+    custom_build_dir_name = "__next"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+    baseUrl = "https://kaelbot.xyz"
+    sitemapPath = "/sitemap.xml"
+    providers = [
+      "google"
+    ]

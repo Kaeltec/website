@@ -79,6 +79,7 @@ typings/
 out
 .next
 __next
+.netlify
 
 # Nuxt.js build / generate output
 .nuxt
