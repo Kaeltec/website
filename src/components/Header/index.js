@@ -34,27 +34,18 @@ const HeaderComponent = () => {
       <Navigation open={navbarOpen}>
         <Link href="/commands">Comandos</Link>
         <Link href="/support">Suporte</Link>
-        <a
-          href="https://translate.kaelbot.xyz/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://crowdin.com/project/KaelBot" rel="nofollow">
           Me Traduza
         </a>
         <a
           href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MX8CFVD9Z5SCN&source=url"
-          target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow"
         >
           Doar
         </a>
 
         <DashBoardContainer>
-          <a
-            href="https://dash.kaelbot.xyz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://dash.kaelbot.xyz" rel="nofollow">
             Dashboard
           </a>
         </DashBoardContainer>
