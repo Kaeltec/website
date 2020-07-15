@@ -41,7 +41,11 @@ const CommandsPage = () => {
 
   return (
     <>
-      <SEO title="Kael - Commands | The best discord fun bot" />
+      <SEO title="Kael Commands | The best discord fun bot">
+        {!!Object.values(router.query).length && (
+          <meta name="robots" content="noindex" />
+        )}
+      </SEO>
 
       <Layout>
         <Container>
@@ -54,10 +58,7 @@ const CommandsPage = () => {
               <span style={{ marginLeft: '5px' }}>[aparecem assim]</span>
             </p>
             <p>
-              <span style={{ color: '#e96969' }}>
-                {' '}
-                Parâmetros obrigatórios:
-              </span>{' '}
+              <span style={{ color: '#e96969' }}>Parâmetros obrigatórios:</span>{' '}
               <span style={{ marginLeft: '5px' }}> {'<aparecem assim>'}</span>
             </p>
           </Hero>

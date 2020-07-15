@@ -24,7 +24,11 @@ const PolicesPage = () => {
 
   return (
     <>
-      <SEO title="Kael - Políticas" />
+      <SEO title="Kael Polices | The best discord fun bot">
+        {!!Object.values(router.query).length && (
+          <meta name="robots" content="noindex" />
+        )}
+      </SEO>
 
       <Layout>
         <Container>

@@ -26,7 +26,7 @@ class MyDocument extends Document {
 
           <meta
             name="keywords"
-            content="discord, discord-bot, bot, kael, kaeltec, kaelbot, kael-bot, kael bot, kaelwebsite, kael-website, kael website"
+            content="discord, discord-bot, bot, kael, kaeltec, kaelbot, kael bot discord, kael-bot, kael bot, kaelwebsite, kael-website, kael website"
           />
 
           <meta name="author" content="Kaeltec Team" />
@@ -45,8 +45,8 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
           <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+          <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
 
           <link rel="icon" href="/favicon.png" />
           <link rel="manifest" href="/manifest.webmanifest" />
