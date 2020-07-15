@@ -1,8 +1,9 @@
 User-agent: *
 
 Allow: /
-Disallow: /404
-Disallow: /support
 Disallow: /*?
+Disallow: /404
+Disallow: /invite
+Disallow: /support
 
 sitemap: https://kaelbot.xyz/sitemap.xml
