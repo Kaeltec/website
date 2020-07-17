@@ -12,13 +12,15 @@ const BASE_URL = base => {
 
 const HeadComponent = ({ title, description, image, url, children }) => {
   const router = useRouter();
+
   const metaImage = BASE_URL(image);
+  const canonical = BASE_URL(url || router.pathname);
 
   return (
     <NextHead>
       <title>{title}</title>
 
-      <link itemProp="url" href="https://kaelbot.xyz" />
+      <link itemProp="url" href="https://kaelbot.xyz/" />
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
 
@@ -26,7 +28,7 @@ const HeadComponent = ({ title, description, image, url, children }) => {
       <meta name="description" content={description} />
 
       <meta property="og:title" content={title} />
-      <meta property="og:url" content={BASE_URL(url)} />
+      <meta property="og:url" content={canonical} />
       <meta property="og:description" content={description} />
 
       <meta property="og:image:width" content="1920" />
@@ -47,7 +49,7 @@ const HeadComponent = ({ title, description, image, url, children }) => {
 
       <link rel="icon" href="/favicon.png" />
       <link rel="shortcut icon" href="/favicon.png" />
-      <link rel="canonical" href={BASE_URL(router.pathname)} />
+      <link rel="canonical" href={canonical} />
 
       {children}
     </NextHead>
