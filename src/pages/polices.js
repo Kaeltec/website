@@ -20,7 +20,10 @@ const PolicesPage = () => {
   const activePolice = (router.query.p || 'privacy').toLowerCase();
   const police = polices[activePolice];
 
-  if (!police) router.push('/polices');
+  if (!police) {
+    router.push('/polices');
+    return <></>;
+  }
 
   return (
     <>

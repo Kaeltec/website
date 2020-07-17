@@ -37,6 +37,7 @@ const CommandsPage = () => {
 
   if (commands && !categories.some(c => c === activeCategory)) {
     router.push('/commands');
+    return <></>;
   }
 
   return (
