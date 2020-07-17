@@ -14,6 +14,9 @@ module.exports = composePlugins(
     devIndicators: {
       autoPrerender: false,
     },
+    experimental: {
+      trailingSlash: true,
+    },
     webpack: config => {
       config.module.rules.push({ test: /\.md$/, use: 'raw-loader' });
       return config;
