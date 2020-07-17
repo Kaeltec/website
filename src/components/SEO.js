@@ -1,4 +1,5 @@
 import NextHead from 'next/head';
+import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import React from 'react';
 import urlJoin from 'url-join';
@@ -10,6 +11,7 @@ const BASE_URL = base => {
 };
 
 const HeadComponent = ({ title, description, image, url, children }) => {
+  const router = useRouter();
   const metaImage = BASE_URL(image);
 
   return (
@@ -45,6 +47,7 @@ const HeadComponent = ({ title, description, image, url, children }) => {
 
       <link rel="icon" href="/favicon.png" />
       <link rel="shortcut icon" href="/favicon.png" />
+      <link rel="canonical" href={BASE_URL(router.pathname)} />
 
       {children}
     </NextHead>
