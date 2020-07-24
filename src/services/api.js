@@ -1,3 +1,3 @@
 import axios from 'axios';
 
-export default axios.create({ baseURL: 'https://api.kaelbot.xyz/client/info' });
+export default axios.create({ baseURL: 'https://api.kaelbot.xyz/client' });
