@@ -25,6 +25,11 @@ class MyDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <meta
+            name="google-site-verification"
+            content="YLPpHPuPX6aMX_wqeK1pk0FgCOQbE-As3fLXN51s6gU"
+          />
+
+          <meta
             name="keywords"
             content="discord, discord-bot, bot, kael, kaeltec, kaelbot, kael bot discord, kael-bot, kael bot, kaelwebsite, kael-website, kael website"
           />
