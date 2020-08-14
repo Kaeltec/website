@@ -1,9 +1,0 @@
-User-agent: *
-
-Allow: /
-Disallow: /*?
-Disallow: /404
-Disallow: /invite
-Disallow: /support
-
-sitemap: https://kaelbot.xyz/sitemap.xml
