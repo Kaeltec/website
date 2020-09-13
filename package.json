@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@zeit/next-stylus": "1.0.1",
-    "axios": "0.19.2",
+    "axios": "0.20.0",
     "next": "9.5.3",
     "raw-loader": "4.0.1",
     "react": "16.13.1",
