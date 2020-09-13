@@ -33,7 +33,7 @@
     "@hitechline/eslint-config-web": "1.0.2",
     "@next/bundle-analyzer": "9.5.3",
     "@types/node": "14.0.27",
-    "@types/react": "16.9.46",
+    "@types/react": "16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/url-join": "4.0.0",
     "@zeit/next-source-maps": "0.0.3",
