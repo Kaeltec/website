@@ -32,7 +32,7 @@
   "devDependencies": {
     "@hitechline/eslint-config-web": "1.0.2",
     "@next/bundle-analyzer": "9.5.3",
-    "@types/node": "14.11.4",
+    "@types/node": "14.11.5",
     "@types/react": "16.9.51",
     "@types/react-dom": "16.9.8",
     "@types/url-join": "4.0.0",
