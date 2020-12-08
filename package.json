@@ -32,7 +32,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "9.5.2",
     "@zeit/next-source-maps": "0.0.3",
-    "babel-plugin-root-import": "6.5.0",
+    "babel-plugin-root-import": "6.6.0",
     "babel-plugin-styled-components": "1.11.1",
     "eslint": "7.6.0",
     "eslint-config-airbnb": "18.2.0",
