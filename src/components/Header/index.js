@@ -45,7 +45,7 @@ const HeaderComponent = () => {
         </a>
 
         <DashBoardContainer>
-          <a href="https://dash.kaelbot.xyz" rel="nofollow">
+          <a href="https://dash.kaelbot.com" rel="nofollow">
             Dashboard
           </a>
         </DashBoardContainer>

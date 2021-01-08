@@ -6,7 +6,7 @@ import urlJoin from 'url-join';
 
 const BASE_URL = base => {
   return !/^(https|http):\/\/+/.test(base)
-    ? urlJoin('https://kaelbot.xyz', base)
+    ? urlJoin('https://kaelbot.com', base)
     : base;
 };
 
@@ -20,7 +20,7 @@ const HeadComponent = ({ title, description, image, url, children }) => {
     <NextHead>
       <title>{title}</title>
 
-      <link itemProp="url" href="https://kaelbot.xyz/" />
+      <link itemProp="url" href="https://kaelbot.com/" />
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
 

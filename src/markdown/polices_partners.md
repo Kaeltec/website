@@ -30,4 +30,4 @@ Depois de aceito no programa de parceria do Kael o usuário/cliente/parceiro ter
 
 ## Hora de decolar!
 
-Se você se qualificou para todas as nossas diretrizes do programa de parceria você está pronto para decolagem. Entre em contato com um representante oficial em nosso servidor Discord ou nos envie um e-mail para **partners@kaelbot.xyz**.
+Se você se qualificou para todas as nossas diretrizes do programa de parceria você está pronto para decolagem. Entre em contato com um representante oficial em nosso servidor Discord ou nos envie um e-mail para **partners@kaelbot.com**.
