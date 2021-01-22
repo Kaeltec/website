@@ -21,7 +21,7 @@
   "dependencies": {
     "axios": "0.21.1",
     "moment": "2.29.1",
-    "next": "9.5.5",
+    "next": "10.0.5",
     "raw-loader": "4.0.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
@@ -30,7 +30,7 @@
     "url-join": "4.0.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "9.5.5",
+    "@next/bundle-analyzer": "10.0.5",
     "@zeit/next-source-maps": "0.0.3",
     "babel-plugin-root-import": "6.6.0",
     "babel-plugin-styled-components": "1.12.0",
